@@ -1,0 +1,29 @@
+{
+  "name": "chirimoyaweb",
+  "version": "1.0.0",
+  "description": "Website for Chirimoya Estudio Creativo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yerma/chirimoyaweb.git"
+  },
+  "keywords": [
+    "design"
+  ],
+  "author": "Yermain Araya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yerma/chirimoyaweb/issues"
+  },
+  "homepage": "https://github.com/yerma/chirimoyaweb#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-ejs-layouts": "^2.3.0",
+    "nodemon": "^1.11.0"
+  }
+}
