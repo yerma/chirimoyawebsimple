@@ -1,0 +1,51 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#AFD68A;stroke-width:18.8155;stroke-miterlimit:10;}
+	.st1{fill:#AFD68A;}
+</style>
+
+<defs>
+<style>
+	.st0{fill:none;stroke:#AFD68A;stroke-width:18.8155;stroke-miterlimit:10;}
+	.st1{fill:#AFD68A;}
+
+	.st0 {
+		stroke-dasharray: 2000;
+		stroke-dashoffset: 0;
+		-webkit-animation: dash 4s linear forwards;
+		-o-animation: dash 4s linear forwards;
+		-moz-animation: dash 4s linear forwards;
+		animation: dash 4s linear forwards;
+	}
+
+	@-webkit-keyframes dash {
+		from {
+			stroke-dashoffset: 2000;
+		}
+
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+</style>
+</defs>
+<g>
+	<path class="st0" d="M131.1,422.7c54,33.2,213.6-23.1,278.6-128.8s-87.6-152.4-87.6-152.4S194.2-1.1,125.7,110.4
+		S55,375.9,131.1,422.7z"/>
+	<path class="st1" d="M158.6,346.2c6.5-10.5,25.1-25.8,33.3-20.8c8.2,5,2.9,28.5-3.5,39.1c-6.5,10.5-18.4,15-26.6,9.9
+		C153.6,369.4,152.2,356.8,158.6,346.2z"/>
+	<path class="st1" d="M238.8,354.4c-3.4-12.3-2.3-36.6,6.8-38.5c9.1-1.8,22.8,19.5,26.2,31.8c3.4,12.3-1.2,23.8-10.3,25.7
+		C252.3,375.3,242.2,366.8,238.8,354.4z"/>
+	<path class="st1" d="M306.6,318.7c-10.9-7.6-26.8-27.5-21.6-34.8s29.5,0.7,40.4,8.3s15.5,19.7,10.3,27
+		C330.5,326.5,317.5,326.3,306.6,318.7z"/>
+	<path class="st1" d="M345.5,248.2c-12.9-2.4-35.8-14.1-34.6-23.1c1.2-9,26-11.8,38.9-9.4c12.9,2.4,22.4,11.6,21.2,20.6
+		C369.8,245.3,358.4,250.6,345.5,248.2z"/>
+	<path class="st1" d="M149.6,299.6c12.6-2.5,33.7-14.4,31.3-23.4c-2.5-9-27.7-11.6-40.2-9.1c-12.6,2.5-20.7,11.8-18.3,20.8
+		C124.8,296.9,137,302.1,149.6,299.6z"/>
+	<path class="st1" d="M150.8,222.9c11.7,6.3,36.6,11.5,40.8,3.5c4.2-7.9-14-26-25.6-32.3s-24.5-5-28.7,3
+		C133.1,205.1,139.2,216.6,150.8,222.9z"/>
+	<path class="st1" d="M196.3,156.4c8,10.4,28.7,25.5,36.2,20.4s-1.2-28.6-9.1-39s-20.5-14.7-28-9.6
+		C187.9,133.4,188.3,146,196.3,156.4z"/>
+</g>
+</svg>
