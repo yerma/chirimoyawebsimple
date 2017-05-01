@@ -2,10 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chirimoya Estudio - Dale vida a tus proyectos</title>
+    <meta name="author" content="Chirimoya Estudio" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/component.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -13,20 +19,37 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+    <script src="/js/modernizr-custom.js"></script>
 </head>
 <body>
-{{>header-info}}
+<div class="header-info navbar-fixed-top">
+    <div class="container-fluid">
+        <ul class="contact pull-left">
+            <li><i class="fa fa-phone"></i> +56 9 9999 9999</li>
+            <li><i class="fa fa-envelope-o"></i> contacto@chirimoyaestudio.cl</li>
+        </ul>
+        <ul class="rrss pull-right">
+            <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+            <li><a href="http://www.facebook.com/disenochirimoya"><i class="fa fa-facebook fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-search fa-lg"></i></a></li>
+        </ul>
+    </div>
+</div>
 {{>navigation}}
-{{{ body }}}
+{{{body}}}
 
 <script src="/js/jquery.js"></script>
+<script src="/js/classie.js"></script>
+<script src="/js/anime.min.js"></script>
+<script src="/js/main.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 <script>
-    $(function () {
+    $(function(){
         $('[data-toggle="tooltip"]').tooltip();
     });
 </script>

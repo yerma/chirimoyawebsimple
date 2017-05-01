@@ -1,7 +1,76 @@
-<section id="proyectos">
-    <h3>Proyectos</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi doloremque dolorum ducimus expedita fugit hic
-        labore maiores nam nesciunt odio officia placeat, porro quos repudiandae, sit temporibus veritatis voluptate.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut culpa doloremque eius eligendi est fuga,
-        in itaque magnam minus natus nisi nobis omnis, praesentium quam quos repudiandae similique vitae!</p>
+<section id="portafolio" class="page loading js">
+    <h3>Conoce nuestro trabajo</h3>
+    <div class="row">
+        <div class="col-xs-12 col-md-3 categorias">
+            <button data-filter="*" class="button is-active">Ver todo</button>
+            <button data-filter=".branding" class="button">Branding</button>
+            <button data-filter=".web" class="button">Desarrollo Web</button>
+            <button data-filter=".editorial" class="button">Editorial</button>
+            <button data-filter=".encuadernacion" class="button">Encuadernación</button>
+            <button data-filter=".ilustracion" class="button">Ilustración</button>
+            <button data-filter=".multimedia" class="button">Multimedia</button>
+        </div>
+
+        <div class="content content--center col-xs-12 col-md-9">
+            <div id="grid" class="grid">
+                <div class="grid__sizer"></div>
+                <div class="grid__item branding">
+                    <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x400" alt="Some image" /></a>
+                </div>
+                <div class="grid__item encuadernacion">
+                    <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/400x700" alt="Some image" /></a>
+                </div>
+                <div class="grid__item ilustracion">
+                    <a  class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x500" alt="Some image" /></a>
+                </div>
+                <div class="grid__item multimedia">
+                    <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/400x600" alt="Some image" /></a>
+                </div>
+                <div class="grid__item web">
+                    <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x400" alt="Some image" /></a>
+                </div>
+                <div class="grid__item editorial">
+                    <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x500" alt="Some image" /></a>
+                </div>
+                <div class="grid__item">
+                    <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x400" alt="Some image" /></a>
+                </div>
+                <div class="grid__item">
+                    <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x400" alt="Some image" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script>
+        var grid = document.querySelector('.grid');
+
+        var iso = new Isotope( '.grid', {
+            itemSelector: '.grid__item',
+            layoutMode: 'masonry'
+        });
+
+        var filtersElem = document.querySelector('.categorias');
+        filtersElem.addEventListener( 'click', function( event ) {
+            if ( !matchesSelector( event.target, 'button' ) ) {
+                return;
+            }
+            var filterValue = event.target.getAttribute('data-filter');
+            iso.arrange({ filter: filterValue });
+        });
+
+        var categorias = Array.from(document.querySelectorAll('.categorias'));
+        categorias.forEach(function (cat) {
+            cat.addEventListener( 'click', function( event ) {
+                // only work with buttons
+                if ( !matchesSelector( event.target, 'button' ) ) {
+                    return;
+                }
+                cat.querySelector('.is-active').classList.remove('is-active');
+                event.target.classList.add('is-active');
+            });
+        });
+    </script>
 </section>
