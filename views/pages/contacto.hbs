@@ -1,28 +1,72 @@
 <section id="contacto" class="page">
     <h3>Contáctanos</h3>
-    <form action="">
-        <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" class="form-control">
-        </div>
+    <div class="row">
+        <div class="formulario col-xs-12 col-md-6">
+            <form action="">
+                <div class="form-group">
+                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+                </div>
 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="form-control">
-        </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                </div>
 
-        <div class="form-group">
-            <label for="tel">Teléfono</label>
-            <input type="tel" id="tel" name="tel" class="form-control">
-        </div>
+                <div class="form-group">
+                    <input type="tel" id="tel" name="tel" class="form-control" placeholder="Teléfono">
+                </div>
 
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" class="form-control"></textarea>
-        </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-control" placeholder="Mensaje"></textarea>
+                </div>
 
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+                <!-- progress button -->
+                <div id="progress-button" class="progress-button pull-right">
+                    <!-- button with text -->
+                    <button><span>Submit</span></button>
+
+                    <!-- svg circle for progress indication -->
+                    <svg class="progress-circle" width="70" height="70">
+                        <path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/>
+                    </svg>
+
+                    <!-- checkmark to show on success -->
+                    <svg class="checkmark" width="70" height="70">
+                        <path d="m31.5,46.5l15.3,-23.2"/>
+                        <path d="m31.5,46.5l-8.5,-7.1"/>
+                    </svg>
+
+                    <!-- cross to show on error -->
+                    <svg class="cross" width="70" height="70">
+                        <path d="m35,35l-9.3,-9.3"/>
+                        <path d="m35,35l9.3,9.3"/>
+                        <path d="m35,35l-9.3,9.3"/>
+                        <path d="m35,35l9.3,-9.3"/>
+                    </svg>
+
+                </div><!-- /progress-button -->
+            </form>
         </div>
-    </form>
+        <div class="ubicacion col-xs-12 col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.359846581475!2d-70.59354760439203!3d-33.51073439906992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d0436719a93f%3A0xc1e4aaed4214334!2sLago+Pirihueico+6248%2C+La+Florida%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1493601621057"
+                    width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="/js/uiProgressButton.js"></script>
+    <script>
+        var button = document.querySelector('.progress-button');
+        new UIProgressButton( button, {
+            callback : function( instance ) {
+                var progress = 0,
+                interval = setInterval( function() {
+                    progress = Math.min( progress + Math.random() * 0.1, 1 );
+                    instance.setProgress( progress );
+
+                    if( progress === 1 ) {
+                        instance.stop(1);
+                        clearInterval( interval );
+                    }
+                }, 150 );
+            }
+        } );
+    </script>
 </section>

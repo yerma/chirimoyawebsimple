@@ -22,7 +22,6 @@ section {
 }
 
 .page {
-	padding: 40px 20px 20px 100px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

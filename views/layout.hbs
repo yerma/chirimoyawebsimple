@@ -41,7 +41,6 @@
 
 <script src="/js/jquery.js"></script>
 <script src="/js/classie.js"></script>
-<script src="/js/anime.min.js"></script>
 <script src="/js/main.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
@@ -49,9 +48,17 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 <script>
+
     $(function(){
         $('[data-toggle="tooltip"]').tooltip();
+
+        window.onhashchange = function () {
+            console.log('change');
+            var section = document.querySelector('section');
+            $('#tt-' + section.id).tooltip("show");
+        };
     });
+
 </script>
 </body>
 </html>
