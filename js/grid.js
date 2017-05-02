@@ -170,7 +170,4 @@
             loader._render();
         }, 1500);
     }
-
-    gridInit();
-
 })(window);

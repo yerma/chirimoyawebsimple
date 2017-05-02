@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirimoya Estudio - Dale vida a tus proyectos</title>
+    <meta name="author" content="Chirimoya Estudio"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/component.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/style-scrollsliding.css">
+
+    <script src="/js/modernizr-custom.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Top info -->
+<div class="header-info navbar-fixed-top">
+    <div class="container-fluid">
+        <ul class="contact pull-left">
+            <li><i class="fa fa-phone"></i> +56 9 9999 9999</li>
+            <li><i class="fa fa-envelope-o"></i> contacto@chirimoyaestudio.cl</li>
+        </ul>
+        <ul class="rrss pull-right">
+            <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+            <li><a href="http://www.facebook.com/disenochirimoya"><i class="fa fa-facebook fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-search fa-lg"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Main navigation -->
+<nav class="navbar">
+    <ul id="ss-links" class="nav navbar-nav ss-links" data-spy="affix" data-offset-top="205">
+        <li class="active"><a href="#inicio"><span class="mytooltip">Inicio</span></a></li>
+        <li><a href="#nosotros"><span class="mytooltip">Nosotros</span></a></li>
+        <li><a href="#servicios"><span class="mytooltip">Servicios</span></a></li>
+        <li><a href="#portafolio"><span class="mytooltip">Portafolio</span></a></li>
+        <li><a href="#contacto"><span class="mytooltip">Contacto</span></a></li>
+    </ul>
+</nav>
+
+<!-- Sections  -->
+
+<main id="ss-container" class="container ss-container">
+    <section id="inicio" class="page">
+        <img src="/img/chirilogo-01.svg" alt="Logo Chirimoya" class="main-logo">
+    </section>
+
+    <section id="nosotros" class="page">
+        <h3>Nosotros</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet consequuntur corporis cupiditate dolor
+            eum eveniet ex incidunt minus nihil obcaecati optio perspiciatis quo rerum saepe sequi, tenetur unde
+            voluptatem.</p>
+    </section>
+
+    <section id="servicios" class="page ss-row">
+        <div class="ss-left">
+            <h3>Qué ofrecemos</h3>
+            <p>Entregar un servicio y soluciones de calidad que destaquen el profesionalismo, pasión y enfoque de
+                cada uno de sus integrantes, con el propósito de contribuir al desarrollo de nuestros clientes y al
+                de la sociedad.</p>
+        </div>
+        <div class="iconos-servicios ss-right">
+            <div class="servicio col-xs-12 col-sm-6 col-md-5ths">
+                <i class="fa fa-pencil fa-4x"></i>
+                <h4>Ilustración</h4>
+            </div>
+            <div class="servicio col-xs-12 col-sm-6 col-md-5ths">
+                <i class="fa fa-mouse-pointer fa-4x"></i>
+                <h4>Web</h4>
+            </div>
+            <div class="servicio col-xs-12 col-sm-6 col-md-5ths">
+                <i class="fa fa-film fa-4x"></i>
+                <h4>Multimedia</h4>
+            </div>
+            <div class="servicio col-xs-12 col-sm-6 col-md-5ths">
+                <i class="fa fa-book fa-4x"></i>
+                <h4>Editorial</h4>
+            </div>
+            <div class="servicio col-xs-12 col-sm-6 col-md-5ths">
+                <i class="fa fa-tag fa-4x"></i>
+                <h4>Branding</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="page loading js">
+        <h3>Conoce nuestro trabajo</h3>
+        <div class="row">
+            <div class="col-xs-12 col-md-3 categorias">
+                <button data-filter="*" class="button is-active">Ver todo</button>
+                <button data-filter=".branding" class="button">Branding</button>
+                <button data-filter=".web" class="button">Desarrollo Web</button>
+                <button data-filter=".editorial" class="button">Editorial</button>
+                <button data-filter=".encuadernacion" class="button">Encuadernación</button>
+                <button data-filter=".ilustracion" class="button">Ilustración</button>
+                <button data-filter=".multimedia" class="button">Multimedia</button>
+            </div>
+
+            <div class="content content--center col-xs-12 col-md-9">
+                <div id="grid" class="grid">
+                    <div class="grid__sizer"></div>
+                    <div class="grid__item branding">
+                        <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x400"
+                                                            alt="Some image"/></a>
+                    </div>
+                    <div class="grid__item encuadernacion">
+                        <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/400x700"
+                                                            alt="Some image"/></a>
+                    </div>
+                    <div class="grid__item ilustracion">
+                        <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x500"
+                                                            alt="Some image"/></a>
+                    </div>
+                    <div class="grid__item multimedia">
+                        <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/400x600"
+                                                            alt="Some image"/></a>
+                    </div>
+                    <div class="grid__item web">
+                        <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x400"
+                                                            alt="Some image"/></a>
+                    </div>
+                    <div class="grid__item editorial">
+                        <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x500"
+                                                            alt="Some image"/></a>
+                    </div>
+                    <div class="grid__item">
+                        <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x400"
+                                                            alt="Some image"/></a>
+                    </div>
+                    <div class="grid__item">
+                        <a class="grid__link" href="#"><img class="grid__img" src="http://placehold.it/600x400"
+                                                            alt="Some image"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/imagesloaded.pkgd.min.js"></script>
+        <script src="/js/masonry.pkgd.min.js"></script>
+        <script src="/js/isotope.pkgd.min.js"></script>
+        <script src="/js/anime.min.js"></script>
+        <script src="/js/grid.js"></script>
+        <script>
+            var grid = document.querySelector('.grid');
+
+            var iso = new Isotope('.grid', {
+                itemSelector: '.grid__item',
+                layoutMode: 'masonry'
+            });
+
+            var filtersElem = document.querySelector('.categorias');
+            filtersElem.addEventListener('click', function (event) {
+                if (!matchesSelector(event.target, 'button')) {
+                    return;
+                }
+                var filterValue = event.target.getAttribute('data-filter');
+                iso.arrange({filter: filterValue});
+            });
+
+            var categorias = Array.from(document.querySelectorAll('.categorias'));
+            categorias.forEach(function (cat) {
+                cat.addEventListener('click', function (event) {
+                    // only work with buttons
+                    if (!matchesSelector(event.target, 'button')) {
+                        return;
+                    }
+                    cat.querySelector('.is-active').classList.remove('is-active');
+                    event.target.classList.add('is-active');
+                });
+            });
+        </script>
+    </section>
+
+    <section id="contacto" class="page">
+        <h3>Contáctanos</h3>
+        <div class="row">
+            <div class="formulario col-xs-12 col-md-6">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="tel" name="tel" class="form-control" placeholder="Teléfono">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-control" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <!-- progress button -->
+                    <div id="progress-button" class="progress-button pull-right">
+                        <!-- button with text -->
+                        <button><span>Submit</span></button>
+
+                        <!-- svg circle for progress indication -->
+                        <svg class="progress-circle" width="70" height="70">
+                            <path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/>
+                        </svg>
+
+                        <!-- checkmark to show on success -->
+                        <svg class="checkmark" width="70" height="70">
+                            <path d="m31.5,46.5l15.3,-23.2"/>
+                            <path d="m31.5,46.5l-8.5,-7.1"/>
+                        </svg>
+
+                        <!-- cross to show on error -->
+                        <svg class="cross" width="70" height="70">
+                            <path d="m35,35l-9.3,-9.3"/>
+                            <path d="m35,35l9.3,9.3"/>
+                            <path d="m35,35l-9.3,9.3"/>
+                            <path d="m35,35l9.3,-9.3"/>
+                        </svg>
+
+                    </div><!-- /progress-button -->
+                </form>
+            </div>
+            <div class="ubicacion col-xs-12 col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.359846581475!2d-70.59354760439203!3d-33.51073439906992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d0436719a93f%3A0xc1e4aaed4214334!2sLago+Pirihueico+6248%2C+La+Florida%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1493601621057"
+                        width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <script src="/js/uiProgressButton.js"></script>
+        <script>
+            var button = document.querySelector('.progress-button');
+            new UIProgressButton(button, {
+                callback: function (instance) {
+                    var progress = 0,
+                        interval = setInterval(function () {
+                            progress = Math.min(progress + Math.random() * 0.1, 1);
+                            instance.setProgress(progress);
+
+                            if (progress === 1) {
+                                instance.stop(1);
+                                clearInterval(interval);
+                            }
+                        }, 150);
+                }
+            });
+        </script>
+    </section>
+</main>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/main.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script>
+    $(function () {
+
+        var $sidescroll = (function () {
+
+            var $rows = $('#ss-container > .ss-row'),
+                $rowsViewport, $rowsOutViewport,
+                $links = $('#ss-links li a'),
+                $win = $(window),
+                winSize = {},
+                anim = false,
+                scrollPageSpeed = 1000,
+                scrollPageEasing = 'easeInOutExpo',
+                hasPerspective = false,
+                perspective = hasPerspective && Modernizr.csstransforms3d,
+                init = function () {
+                    getWinSize();
+                    initEvents();
+                    defineViewport();
+                    setViewportRows();
+                    if (perspective) {
+                        $rows.css({
+                            '-webkit-perspective': 600,
+                            '-webkit-perspective-origin': '50% 0%'
+                        });
+                    }
+                    $rowsViewport.find('a.ss-circle').addClass('ss-circle-deco');
+                    placeRows();
+
+                },
+                defineViewport = function () {
+                    $.extend($.expr[':'], {
+                        inviewport: function (el) {
+                            if ($(el).offset().top < winSize.height) {
+                                return true;
+                            }
+                            return false;
+                        }
+                    });
+
+                },
+                setViewportRows = function () {
+                    $rowsViewport = $rows.filter(':inviewport');
+                    $rowsOutViewport = $rows.not($rowsViewport)
+                },
+                getWinSize = function () {
+                    winSize.width = $win.width();
+                    winSize.height = $win.height();
+                },
+                initEvents = function () {
+                    $links.on('click.Scrolling', function (event) {
+                        $('html, body').stop().animate({
+                            scrollTop: $($(this).attr('href')).offset().top
+                        }, scrollPageSpeed, scrollPageEasing);
+                        return false;
+                    });
+                    $(window).on({
+                        'resize.Scrolling': function (event) {
+                            getWinSize();
+                            setViewportRows();
+                            $rows.find('a.ss-circle').removeClass('ss-circle-deco');
+                            $rowsViewport.each(function () {
+                                $(this).find('div.ss-left')
+                                    .css({left: '0%'})
+                                    .end()
+                                    .find('div.ss-right')
+                                    .css({right: '0%'})
+                                    .end()
+                                    .find('a.ss-circle')
+                                    .addClass('ss-circle-deco');
+                            });
+
+                        },
+                        'scroll.Scrolling': function (event) {
+                            if (anim) return false;
+                            anim = true;
+                            setTimeout(function () {
+                                placeRows();
+                                anim = false;
+                            }, 10);
+                        }
+                    });
+                },
+                placeRows = function () {
+                    var winscroll = $win.scrollTop(),
+                        winCenter = winSize.height / 2 + winscroll;
+                    $rowsOutViewport.each(function (i) {
+                        var $row = $(this),
+                            $rowL = $row.find('div.ss-left'),
+                            $rowR = $row.find('div.ss-right'),
+                            rowT = $row.offset().top;
+                        if (rowT > winSize.height + winscroll) {
+                            if (perspective) {
+                                $rowL.css({
+                                    '-webkit-transform': 'translate3d(-75%, 0, 0) rotateY(-90deg) translate3d(-75%, 0, 0)',
+                                    'opacity': 0
+                                });
+                                $rowR.css({
+                                    '-webkit-transform': 'translate3d(75%, 0, 0) rotateY(90deg) translate3d(75%, 0, 0)',
+                                    'opacity': 0
+                                });
+                            }
+                            else {
+                                $rowL.css({left: '-50%'});
+                                $rowR.css({right: '-50%'});
+                            }
+                        }
+                        // if not, the row should become visible (0% of left/right) as it gets closer to the center of the screen.
+                        else {
+
+                            // row's height
+                            var rowH = $row.height(),
+                                // the value on each scrolling step will be proporcional to the distance from the center of the screen to its height
+                                factor = ( ( ( rowT + rowH / 2 ) - winCenter ) / ( winSize.height / 2 + rowH / 2 ) ),
+                                // value for the left / right of each side of the row.
+                                // 0% is the limit
+                                val = Math.max(factor * 50, 0);
+
+                            if (val <= 0) {
+
+                                // when 0% is reached show the pointer for that row
+                                if (!$row.data('pointer')) {
+
+                                    $row.data('pointer', true);
+                                    $row.find('.ss-circle').addClass('ss-circle-deco');
+
+                                }
+
+                            }
+                            else {
+
+                                // the pointer should not be shown
+                                if ($row.data('pointer')) {
+
+                                    $row.data('pointer', false);
+                                    $row.find('.ss-circle').removeClass('ss-circle-deco');
+
+                                }
+
+                            }
+
+                            // set calculated values
+                            if (perspective) {
+
+                                var t = Math.max(factor * 75, 0),
+                                    r = Math.max(factor * 90, 0),
+                                    o = Math.min(Math.abs(factor - 1), 1);
+
+                                $rowL.css({
+                                    '-webkit-transform': 'translate3d(-' + t + '%, 0, 0) rotateY(-' + r + 'deg) translate3d(-' + t + '%, 0, 0)',
+                                    'opacity': o
+                                });
+                                $rowR.css({
+                                    '-webkit-transform': 'translate3d(' + t + '%, 0, 0) rotateY(' + r + 'deg) translate3d(' + t + '%, 0, 0)',
+                                    'opacity': o
+                                });
+
+                            }
+                            else {
+
+                                $rowL.css({left: -val + '%'});
+                                $rowR.css({right: -val + '%'});
+
+                            }
+
+                        }
+
+                    });
+
+                };
+            return {init: init};
+
+        })();
+
+        $sidescroll.init();
+    });
+</script>
+</body>
+</html>
